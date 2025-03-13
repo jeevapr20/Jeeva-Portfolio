@@ -16,6 +16,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -184,6 +200,15 @@
         "description": "portfolio_project.portfolio_app.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = []\n    operations = [\n        migrations.CreateModel(\n            name=\"Project\",\n            fields=[\n                (\n                    \"id\",\n                    models.BigAutoField(",
         "detail": "portfolio_project.portfolio_app.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "portfolio_project.portfolio_app.migrations.0002_contactmessage_alter_project_link",
+        "description": "portfolio_project.portfolio_app.migrations.0002_contactmessage_alter_project_link",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"portfolio_app\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"ContactMessage\",\n            fields=[\n                (\n                    \"id\",",
+        "detail": "portfolio_project.portfolio_app.migrations.0002_contactmessage_alter_project_link",
         "documentation": {}
     },
     {
