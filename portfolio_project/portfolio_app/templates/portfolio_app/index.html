@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  {% comment %} <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> {% endcomment %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,7 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -74,7 +74,7 @@
   <main class="main">
     {% block content %}
 <!-- Hero Section -->
-<section id="hero" class="hero section">
+<section id="hero" class="hero section dark-background">
   <style>
     /* Hero Section Styles */
     #hero {
@@ -129,8 +129,8 @@
       }
     }
   </style>
-  <img src="{% static 'assets/img/anime-girl.avif' %}" alt="Programmer Image" />
-  <div class="container">
+  <img src="{% static 'assets/img/anime-girl.avif' %}" alt="Programmer Image" data-aos="fade-in" class="" />
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
     <h2 style="color: white;">Jeeva P R</h2>
     <p style="color: white;">I'm a <span class="typed" style="color: white;" data-typed-items="Web Engineer, Web Application Developer, Django Developer, MERN Stack Developer" >Web Developer</span></p>
   </div>
@@ -177,7 +177,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:jeevageetha@gmail.com">jeevageetha@gmail.com</a></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:jeevageetha772@gmail.com">jeevageetha772@gmail.com</a></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
             </ul>
           </div>
@@ -440,7 +440,7 @@
     <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter="*" class="filter-active">PROJECTS</li>
       </ul><!-- End Portfolio Filters -->
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -590,6 +590,13 @@
   <!-- Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200, // Optional: adjust the animation duration
+      once: true, // Optional: triggers animation only once when scrolled into view
+    });
+  </script>
 </body>
 
 </html>
