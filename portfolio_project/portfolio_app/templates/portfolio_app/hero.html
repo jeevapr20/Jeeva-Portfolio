@@ -1,0 +1,68 @@
+{% extends "portfolio_app/index.html" %}
+{% load static %}
+{% block content %}
+<!-- Hero Section -->
+<style>
+    /* Hero Section Styles */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    #hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    #hero .container {
+      position: absolute;
+      text-align: left; /* Align text to the left */
+      color: white; /* Ensure text remains visible against the image */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%; /* Prevent text from overflowing */
+      left: 20px; /* Adjust this value to control how far the container is from the left edge */
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Ensure vertical centering */
+    }
+    
+    
+  
+    #hero h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 40px; /* Adjusted for responsiveness */
+      margin: 10px 0;
+    }
+  
+    #hero p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px; /* Adjusted for responsiveness */
+    }
+  
+    /* Responsive Design for Mobile */
+    @media (max-width: 768px) {
+      #hero h2 {
+        font-size: 30px;
+      }
+  
+      #hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+  
+  <section id="hero" class="hero section">
+    <img src="{% static 'assets/img/anime-girl.avif' %}" alt="Programmer Image" />
+    <div class="container">
+      <h2 style="color: white;">Jeeva P R</h2>
+      <p style="color: white;">I'm a <span class="typed" style="color: white;" data-typed-items="Web Engineer, Web Application Developer, Django Developer, MERN Stack Developer" >Web Developer</span></p>
+    </div>
+  </section><!-- /Hero Section -->
+
+{% endblock content %}
