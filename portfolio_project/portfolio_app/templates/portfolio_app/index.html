@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  {% comment %} <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> {% endcomment %}
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -177,7 +177,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jeevageetha@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:jeevageetha@gmail.com">jeevageetha@gmail.com</a></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
             </ul>
           </div>
@@ -330,7 +330,12 @@
     <h2>Resume</h2>
     <h5>Jeeva P R</h5>
     <p>
-      9895132692 | jeevageetha772@gmail.com | https://www.linkedin.com/in/jeeva-p-r/ | https://github.com/jeevapr20 | Ernakulam, Kerala, India.</p>
+      <a href="tel:+919895132692">9895132692</a> | 
+      <a href="mailto:jeevageetha772@gmail.com">jeevageetha772@gmail.com</a> | 
+      <a href="https://www.linkedin.com/in/jeeva-p-r/" target="_blank">https://www.linkedin.com/in/jeeva-p-r/</a> | 
+      <a href="https://github.com/jeevapr20" target="_blank">https://github.com/jeevapr20</a> | 
+      Ernakulam, Kerala, India.
+    </p>
   </div><!-- End Section Title -->
 
   <div class="container">
