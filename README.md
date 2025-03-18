@@ -17,26 +17,21 @@ A personal portfolio website built with Django to showcase projects, skills, and
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/portfolio-website.git
+Navigate into the project directory:
 
-2. Navigate into the project directory:
 bash
 cd portfolio-website
+Install dependencies:
 
-
-3. Install dependencies:
 bash
 pip install -r requirements.txt
+Run database migrations:
 
-
-4. Run database migrations:
 bash
 python manage.py makemigrations
 python manage.py migrate
+Start the development server:
 
-
-5. Start the development server:
-```bash
+bash
 python manage.py runserver
-
-
-6. Open your browser and go to http://127.0.0.1:8000.
+Open your browser: Go to http://127.0.0.1:8000.
