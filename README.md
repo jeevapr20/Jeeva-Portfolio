@@ -14,11 +14,11 @@ A personal portfolio website built with Django to showcase projects, skills, and
 - **SQLite**: Database for storing contact messages and project details.
 
 ## Setup Instructions
-1. Clone the repository:
+## 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/portfolio-website.git
 
-2. Navigate into the project directory:
+## 2. Navigate into the project directory:
 ```bash
 cd portfolio-website
 
