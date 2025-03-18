@@ -20,7 +20,7 @@ A personal portfolio website built with Django to showcase projects, skills, and
 2. Navigate into the project directory:
 
 ```bash
-cd portfolio-website```
+cd portfolio-website
 3. Install dependencies:
 
 ```bash
