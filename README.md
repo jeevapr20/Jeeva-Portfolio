@@ -23,10 +23,12 @@ A personal portfolio website built with Django to showcase projects, skills, and
 ```bash
 cd portfolio-website
 
+
 3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+
 
 4. Run database migrations:
 
@@ -34,9 +36,11 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 
+
 5. Start the development server:
 
 ```bash
 python manage.py runserver
+
 
 6. Open your browser and go to http://127.0.0.1:8000.
