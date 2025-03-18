@@ -16,11 +16,11 @@ A personal portfolio website built with Django to showcase projects, skills, and
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/jeevapr20/Jeeva-Portfolio.git
    
 2. Navigate into the project directory:
    ```bash
-   cd portfolio-website
+   cd Jeeva-Portfolio
 
 3. Install dependencies:
    ```bash
