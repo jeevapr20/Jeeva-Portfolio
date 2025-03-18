@@ -509,21 +509,29 @@
               <p>jeevageetha772@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
-          <div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden;">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125745.78609833599!2d76.22589144508208!3d9.970864495182433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d08f976f3a9%3A0xe9cdb444f06ed454!2sErnakulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1742282370255!5m2!1sen!2sin" 
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-              allowfullscreen="" 
-              loading="lazy" 
+<div style="position: relative; width: 100%; padding-top: 56.25%; overflow: hidden;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125745.78609833599!2d76.22589144508208!3d9.970864495182433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d08f976f3a9%3A0xe9cdb444f06ed454!2sErnakulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1742282370255!5m2!1sen!2sin"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+              allowfullscreen=""
+              loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
-          
         </div>
       </div>
 
       <div class="col-lg-7">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+         <!-- Messages -->
+      <div class="messages" style="margin-bottom: 20px;">
+        {% for message in messages %}
+          <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      </div>
+        <form method="post" data-aos="fade-up" data-aos-delay="200">
+          {% csrf_token %}
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -546,12 +554,17 @@
               <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
             </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
+            <div style="text-align: center; margin-top: 20px;">
+              <button
+                type="submit"
+                style="background-color: #007bff; color: #fff; padding: 5px 15px; font-size: 0.8rem; font-weight: bold; border: none; border-radius: 3px; cursor: pointer; transition: background-color 0.3s; width: auto;"
+                onmouseover="this.style.backgroundColor='#0056b3';"
+                onmouseout="this.style.backgroundColor='#007bff';"
+              >
+                Send Message
+              </button>
+            </div>
+            
             </div>
 
           </div>
@@ -559,10 +572,19 @@
       </div><!-- End Contact Form -->
 
     </div>
-
+    <script>
+      // Hide messages after 5 seconds
+      setTimeout(function() {
+        const messages = document.querySelector('.messages');
+        if (messages) {
+          messages.style.display = 'none';
+        }
+      }, 5000); // 5000ms = 5 seconds
+    </script>
+    
   </div>
+</section>
 
-</section><!-- /Contact Section -->
 
 {% endblock %}  
   </main>
