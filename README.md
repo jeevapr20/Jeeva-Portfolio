@@ -18,7 +18,6 @@ A personal portfolio website built with Django to showcase projects, skills, and
    ```bash
    git clone https://github.com/yourusername/portfolio-website.git
 2. Navigate into the project directory:
-
    ```bash
 cd portfolio-website
 3. Install dependencies:
